@@ -24,6 +24,10 @@ main {
   padding: 50px 0 0;      
 }
 
+h2 {
+  font-weight: 700;
+}
+
 .devicon-github-original{
   font-size: 60px;
   margin-bottom: 30px;
@@ -32,6 +36,11 @@ main {
 
 .section{
   padding: 70px 0;
+}
+
+.section h2 {
+  margin-bottom: 50px;
+  font-size: 32px;
 }
 
 .container {
@@ -111,7 +120,18 @@ main {
 
 .container .profile-data .info h1{
   font-size: 20px;
+  font-weight: 700;
+}
+
+.container .profile-data .info p.login {
   margin-bottom: 20px;
+}
+
+.container .profile-data .info p.bio {
+  margin-bottom: 10px;
+}
+
+.container .profile-data .info p b {
   font-weight: 700;
 }
 
@@ -119,6 +139,16 @@ main {
   font-size: 15px;  
   font-weight: 400;
   line-height: 23px;
+}
+
+/* EVENTS */
+
+.container .profile-data .events p{
+  margin-bottom: 20px;
+}
+
+.container .profile-data .events p b {
+  font-weight: 700;
 }
 
 /* REPOSITORIES */
@@ -146,6 +176,25 @@ main {
 .container .profile-data .repositories ul li a:hover{
   background-color:hotpink;
   color: #fff
+}
+
+.container .profile-data .repositories .repository-info {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.container .profile-data .repositories p{
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.container .profile-data .repositories .repository-info .info-item {
+  background-color: #6D5CCE;
+  padding: 5px;
+  border-radius: 7px;
+  color: white;
 }
 
 .container .profile-data.hide{
