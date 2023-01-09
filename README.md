@@ -31,7 +31,7 @@ O desafio consistia em adicionar 3 funcionalidades no projeto já desenvolvido p
 
 1. Mostrar número de seguidores e a quantidade de pessoas que o usuário está seguindo.
 
-2. Apresentar uma lista de no máximo 10 últimos eventos do usuário no GitHub, que sejam apenas do tipo "CreateEvent" e "PushEvent".
+2. Apresentar uma lista de até 10 últimos eventos feitos no GitHub, que sejam apenas do tipo "CreateEvent" e "PushEvent".
 
 3. Mostrar a quantidade de forks, estrelas, watchers e a linguagem de programação do repositório.
 
