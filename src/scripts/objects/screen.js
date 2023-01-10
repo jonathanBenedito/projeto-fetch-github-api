@@ -11,21 +11,6 @@ const screen = {
                                                     <p>👤 Seguindo: <b>${user.following}</b></p>
                                                 </div>
                                         </div>`
-                                        
-        let eventsItens = ''
-        user.events.forEach(event => eventsItens += `<li>
-                                                        <p>
-                                                            <b>${event.repo.name}</b>
-                                                            - ${event.message}
-                                                        </p>
-                                                    </li>`)
-        
-        if(user.events.length > 0) {
-            this.userProfile.innerHTML +=   `<div class="events section">
-                                                <h2>Eventos</h2>
-                                                <ul>${eventsItens}</ul>
-                                            </div>`
-        }
 
         let repositoriesItens = ''
         user.repositories.forEach(repo => repositoriesItens += `<li>
@@ -45,6 +30,21 @@ const screen = {
                                                 <h2>Repositórios</h2>
                                                 <ul>${repositoriesItens}</ul>
                                              </div>`
+        }
+
+        let eventsItens = ''
+        user.events.forEach(event => eventsItens += `<li>
+                                                        <p>
+                                                            <b>${event.repo.name}</b>
+                                                            - ${event.message}
+                                                        </p>
+                                                    </li>`)
+        
+        if(user.events.length > 0) {
+            this.userProfile.innerHTML +=   `<div class="events section">
+                                                <h2>Eventos</h2>
+                                                <ul>${eventsItens}</ul>
+                                            </div>`
         }
     },
     renderNotFound(){
