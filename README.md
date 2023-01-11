@@ -25,6 +25,8 @@ O projeto permite procurar um usuário que esteja cadastrado no GitHub, mostrand
 -   Número de seguidores
 -   Número de pessoas que o usuário está seguindo
 
+No formulário de busca faz validação por campos em brancos, portanto, não é possível fazer busca com um campo vazio. Caso o usuário não exista, é exibido uma mensagem "Usuário não encontrado" na página. O website utiliza GitHub REST API para coleta de dados.
+
 ### O Desafio
 
 O desafio consistia em adicionar 3 funcionalidades no projeto já desenvolvido pelo curso:
@@ -52,6 +54,8 @@ O desafio consistia em adicionar 3 funcionalidades no projeto já desenvolvido p
 Website: <a href="https://jonathanbenedito.github.io/projeto-fetch-github-api/" target="_blank">jonathanbenedito.github.io/projeto-fetch-github-api</a>
 
 DevQuest - Dev em Dobro (Linkedin): <a href="https://www.linkedin.com/school/devquest-dev-em-dobro/" target="_blank">linkedin.com/school/devquest-dev-em-dobro/</a>
+
+GitHub REST API: <a href="https://docs.github.com/en/rest?apiVersion=2022-11-28" target="_blank">docs.github.com/en/rest?apiVersion=2022-11-28</a>
 
 ### 🧱 Tecnologias
 
