@@ -1,5 +1,3 @@
-import { eventsQuantity } from "../variables.js"
-
 const user = {
     avatarUrl: '',
     name: '',
@@ -21,17 +19,7 @@ const user = {
         this.repositories = repositories
     },
     setEvents(events){
-        const filteredEvents = events.filter((event) => {
-            if(event.type === "CreateEvent") {
-                return event.message = `Create ${event.payload.ref_type}`                   
-            } else if(event.type === "PushEvent") {
-                return event.payload.commits.length > 0 ? 
-                event.message = event.payload.commits[0].message 
-                : ''
-            }
-        })
-
-        this.events = filteredEvents.slice(0, eventsQuantity)
+        this.events = events
     }
 }
 
